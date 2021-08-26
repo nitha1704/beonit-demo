@@ -1,0 +1,22 @@
+.navbar.bg-danger {
+  background-color: #ee2d7b !important;
+}
+.wrap-logo {
+  height: 50px;
+  width: 50px;
+}
+.navbar-item2 {
+  a {
+    color: #fff;
+    margin-right: 15px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    &:last-child {
+      margin-right: 0px;
+    }
+    &:hover {
+      background: black;
+    }
+  }
+}

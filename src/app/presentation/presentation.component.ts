@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
-import Glide from "@glidejs/glide";
+import Glide from "../../../node_modules/@glidejs/glide";
 
 @Component({
   selector: "app-presentation",

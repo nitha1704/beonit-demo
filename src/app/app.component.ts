@@ -11,7 +11,7 @@ import { DOCUMENT } from "@angular/common";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent implements OnInit {
   constructor(
@@ -19,8 +19,14 @@ export class AppComponent implements OnInit {
     public location: Location,
     @Inject(DOCUMENT) document
   ) {}
+
   @HostListener("window:scroll", ["$event"])
-  onWindowScroll(e) {
+  
+  ngOnInit() {
+    this.onWindowScroll();
+  }
+
+  onWindowScroll() {
     if (window.pageYOffset > 100) {
       var element = document.getElementById("navbar-top");
       if (element) {
@@ -34,8 +40,5 @@ export class AppComponent implements OnInit {
         element.classList.remove("bg-danger");
       }
     }
-  }
-  ngOnInit() {
-    this.onWindowScroll(event);
   }
 }

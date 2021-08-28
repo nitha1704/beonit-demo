@@ -22,6 +22,8 @@ import { LoginpageComponent } from "./examples/loginpage/loginpage.component";
 import { PricingComponent } from "./examples/pricing/pricing.component";
 import { ProductpageComponent } from "./examples/productpage/productpage.component";
 import { ResetpageComponent } from "./examples/resetpage/resetpage.component";
+import { OfferComponent } from "./pages/offer/offer.component";
+
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -46,6 +48,9 @@ const routes: Routes = [
   { path: "pricing", component: PricingComponent },
   { path: "product", component: ProductpageComponent },
   { path: "reset", component: ResetpageComponent },
+
+  // My Customize Pages
+  {path: "offer", component: OfferComponent}
 ];
 
 @NgModule({

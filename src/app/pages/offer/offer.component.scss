@@ -1,0 +1,14 @@
+.wrap-offer {
+  padding-top: 30vh;
+  .offer {
+    margin-bottom: 60px;
+  }
+}
+
+.offer:nth-child(even) {
+  .container-offer {
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
+}

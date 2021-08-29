@@ -101,10 +101,12 @@
               jump start your development with our pre-built example pages. </p>
           </div>
         </div>
+        <div class="col-md-12 wrap-btn">
+          <button type="submit" class="btn btn-info" (click)="openModal(wrapContactModal)" #getInTouchBtn>Get in touch</button>
+        </div>
       </div>
     </div>
   </section>
-
 
   <section class="section3">
     <div id="testimonials" class="cd-section">
@@ -234,12 +236,15 @@
 
               </div>
 
-    
+
             </div>
           </carousel>
         </div>
       </div>
     </div>
   </section>
+</div>
 
+<div class="wrap-contact-modal" #wrapContactModal>
+  <app-contactmodal></app-contactmodal>
 </div>

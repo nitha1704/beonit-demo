@@ -9,12 +9,14 @@ export class LandingpageComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    // var body = document.getElementsByTagName("body")[0];
-    // body.classList.add("landing-page");
-    
+
   }
   ngOnDestroy() {
-    // var body = document.getElementsByTagName("body")[0];
-    // body.classList.remove("landing-page");
+
+  }
+
+  openModal(wrapContactModal) {
+    console.log(wrapContactModal);
+    wrapContactModal.classList.add('active');
   }
 }

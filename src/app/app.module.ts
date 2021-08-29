@@ -49,6 +49,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { PictureUploadComponent } from "./components/picture-upload/picture-upload.component";
 import { OfferComponent } from './pages/offer/offer.component';
+import { ContactmodalComponent } from './components/contactmodal/contactmodal.component';
 
 
 @NgModule({
@@ -77,7 +78,8 @@ import { OfferComponent } from './pages/offer/offer.component';
     NavbarComponent,
     FooterComponent,
     PictureUploadComponent,
-    OfferComponent
+    OfferComponent,
+    ContactmodalComponent
   ],
   imports: [
     CommonModule,

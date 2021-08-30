@@ -24,6 +24,7 @@ import { ProductpageComponent } from "./examples/productpage/productpage.compone
 import { ResetpageComponent } from "./examples/resetpage/resetpage.component";
 import { OfferComponent } from "./pages/offer/offer.component";
 import { TeamComponent } from "./pages/team/team.component";
+import { AchievementComponent } from "./pages/achievement/achievement.component";
 
 
 const routes: Routes = [
@@ -52,6 +53,7 @@ const routes: Routes = [
   { path: "contact-us", component: ContactusComponent },
   { path: "about-us", component: AboutusComponent },
   { path: "team", component: TeamComponent },
+  { path: "achievement", component: AchievementComponent },
   { path: "offer", component: OfferComponent },
 ];
 

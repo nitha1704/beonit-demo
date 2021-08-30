@@ -51,6 +51,7 @@ import { PictureUploadComponent } from "./components/picture-upload/picture-uplo
 import { OfferComponent } from './pages/offer/offer.component';
 import { ContactmodalComponent } from './components/contactmodal/contactmodal.component';
 import { TeamComponent } from './pages/team/team.component';
+import { AchievementComponent } from './pages/achievement/achievement.component';
 
 
 @NgModule({
@@ -81,7 +82,8 @@ import { TeamComponent } from './pages/team/team.component';
     PictureUploadComponent,
     OfferComponent,
     ContactmodalComponent,
-    TeamComponent
+    TeamComponent,
+    AchievementComponent
   ],
   imports: [
     CommonModule,

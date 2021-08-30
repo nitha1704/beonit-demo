@@ -16,7 +16,6 @@ export class LandingpageComponent implements OnInit, OnDestroy {
   }
 
   openModal(wrapContactModal) {
-    console.log(wrapContactModal);
     wrapContactModal.classList.add('active');
   }
 }

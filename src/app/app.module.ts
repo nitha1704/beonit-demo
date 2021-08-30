@@ -52,6 +52,12 @@ import { OfferComponent } from './pages/offer/offer.component';
 import { ContactmodalComponent } from './components/contactmodal/contactmodal.component';
 import { TeamComponent } from './pages/team/team.component';
 import { AchievementComponent } from './pages/achievement/achievement.component';
+import { IotComponent } from './pages/products/iot/iot.component';
+import { ErpComponent } from './pages/products/erp/erp.component';
+import { ResearchComponent } from './pages/products/research/research.component';
+import { KeyboardComponent } from './pages/products/keyboard/keyboard.component';
+import { PulseOximeterComponent } from './pages/products/pulse-oximeter/pulse-oximeter.component';
+import { WaterQualityMonitoringComponent } from './pages/products/water-quality-monitoring/water-quality-monitoring.component';
 
 
 @NgModule({
@@ -83,7 +89,13 @@ import { AchievementComponent } from './pages/achievement/achievement.component'
     OfferComponent,
     ContactmodalComponent,
     TeamComponent,
-    AchievementComponent
+    AchievementComponent,
+    IotComponent,
+    ErpComponent,
+    ResearchComponent,
+    KeyboardComponent,
+    PulseOximeterComponent,
+    WaterQualityMonitoringComponent
   ],
   imports: [
     CommonModule,

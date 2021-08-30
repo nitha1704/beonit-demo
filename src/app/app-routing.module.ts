@@ -25,6 +25,12 @@ import { ResetpageComponent } from "./examples/resetpage/resetpage.component";
 import { OfferComponent } from "./pages/offer/offer.component";
 import { TeamComponent } from "./pages/team/team.component";
 import { AchievementComponent } from "./pages/achievement/achievement.component";
+import { IotComponent } from "./pages/products/iot/iot.component";
+import { ErpComponent } from "./pages/products/erp/erp.component";
+import { ResearchComponent } from "./pages/products/research/research.component";
+import { KeyboardComponent } from "./pages/products/keyboard/keyboard.component";
+import { PulseOximeterComponent } from "./pages/products/pulse-oximeter/pulse-oximeter.component";
+import { WaterQualityMonitoringComponent } from "./pages/products/water-quality-monitoring/water-quality-monitoring.component";
 
 
 const routes: Routes = [
@@ -55,6 +61,14 @@ const routes: Routes = [
   { path: "team", component: TeamComponent },
   { path: "achievement", component: AchievementComponent },
   { path: "offer", component: OfferComponent },
+
+  // Products
+  { path: "iot", component: IotComponent },
+  { path: "erp", component: ErpComponent },
+  { path: "research", component: ResearchComponent },
+  { path: "keyboard", component: KeyboardComponent },
+  { path: "pulse-oximeter", component: PulseOximeterComponent },
+  { path: "water-quality-monitoring", component: WaterQualityMonitoringComponent },
 ];
 
 @NgModule({

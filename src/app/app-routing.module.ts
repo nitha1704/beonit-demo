@@ -32,15 +32,12 @@ const routes: Routes = [
   { path: "sections", component: SectionsComponent },
   { path: "profile", component: ProfilepageComponent },
   { path: "register", component: RegisterpageComponent },
-  { path: "home", component: LandingpageComponent },
-  { path: "about-us", component: AboutusComponent },
   { path: "error500", component: Error500Component },
   { path: "account-settings", component: AccountsettingsComponent },
   { path: "blogpost", component: BlogpostComponent },
   { path: "blogposts", component: BlogpostsComponent },
   { path: "chat", component: ChatpageComponent },
   { path: "checkout", component: CheckoutpageComponent },
-  { path: "contact-us", component: ContactusComponent },
   { path: "ecommerce", component: EcommerceComponent },
   { path: "error", component: ErrorComponent },
   { path: "invoice", component: InvoicepageComponent },
@@ -50,7 +47,10 @@ const routes: Routes = [
   { path: "reset", component: ResetpageComponent },
 
   // My Customize Pages
-  {path: "offer", component: OfferComponent}
+  { path: "home", component: LandingpageComponent },
+  { path: "contact-us", component: ContactusComponent },
+  { path: "about-us", component: AboutusComponent },
+  { path: "offer", component: OfferComponent },
 ];
 
 @NgModule({

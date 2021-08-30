@@ -1,9 +1,6 @@
 <div class="wrapper">
   <div class="page-header header-filter contactus-3">
-    <div
-      class="page-header-image"
-      style="background-image: url('assets/img/andre-benz.jpg');"
-    ></div>
+    <div class="page-header-image" style="background-image: url('assets/img/andre-benz.jpg');"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -24,7 +21,7 @@
               <i class="tim-icons icon-square-pin"> </i>
             </div>
             <h4 class="info-title">Address</h4>
-            <p class="description">12124 First Street, nr 54</p>
+            <p class="description">76/3 Ratchadaphisek Road, Wat Tha Phra subdistrict, Bangkok Yai, Bangkok 10600</p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -35,18 +32,21 @@
               <i class="tim-icons icon-email-85"> </i>
             </div>
             <h4 class="info-title">Email</h4>
-            <p class="description">support@youremail.com</p>
+            <p class="description">
+              <a href="mailto:3e0n1t@gmail.com">3e0n1t@gmail.com</a>
+            </p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="info info-hover">
             <div class="icon icon-warning">
               <img class="bg-blob" src="assets/img/feature-blob/warning.png" />
-
               <i class="tim-icons icon-mobile"> </i>
             </div>
             <h4 class="info-title">Phone Number</h4>
-            <p class="description">+1(424) 535 3523</p>
+            <p class="description">
+              <a href="tel:+66806736819">080-673-6819</a>
+            </p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -56,8 +56,20 @@
 
               <i class="tim-icons icon-single-02"> </i>
             </div>
-            <h4 class="info-title">Contact</h4>
-            <p class="description">Andrew Samian</p>
+            <h4 class="info-title">Social Network</h4>
+
+            <div class="wrap-social">
+              <a class="nav-link" href="http://line.me/ti/p/~@beonit">
+                <i class="fab fa-line"></i>
+                <span>LINE</span>
+              </a>
+            </div>
+            <div class="wrap-social">
+              <a class="nav-link" href="https://facebook.com/beonitsolution">
+                <i class="fab fa-facebook-square"></i>
+                <span>Facebook</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -78,84 +90,50 @@
               <div class="row">
                 <div class="col-md-6">
                   <label> First name </label>
-                  <div
-                    class="input-group"
-                    [ngClass]="{ 'input-group-focus': focus === true }"
-                  >
+                  <div class="input-group" [ngClass]="{ 'input-group-focus': focus === true }">
                     <div class="input-group-prepend">
                       <span class="input-group-text">
                         <i class="tim-icons icon-single-02"> </i>
                       </span>
                     </div>
-                    <input
-                      aria-label="First Name..."
-                      class="form-control"
-                      placeholder="First Name..."
-                      type="text"
-                      (blur)="focus = false"
-                      (focus)="focus = true"
-                    />
+                    <input aria-label="First Name..." class="form-control" placeholder="First Name..." type="text"
+                      (blur)="focus = false" (focus)="focus = true" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label> Last name </label>
-                    <div
-                      class="input-group"
-                      [ngClass]="{ 'input-group-focus': focus1 === true }"
-                    >
+                    <div class="input-group" [ngClass]="{ 'input-group-focus': focus1 === true }">
                       <div class="input-group-prepend">
                         <span class="input-group-text">
                           <i class="tim-icons icon-caps-small"> </i>
                         </span>
                       </div>
-                      <input
-                        aria-label="Last Name..."
-                        class="form-control"
-                        placeholder="Last Name..."
-                        type="text"
-                        (blur)="focus1 = false"
-                        (focus)="focus1 = true"
-                      />
+                      <input aria-label="Last Name..." class="form-control" placeholder="Last Name..." type="text"
+                        (blur)="focus1 = false" (focus)="focus1 = true" />
                     </div>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label> Email address </label>
-                <div
-                  class="input-group"
-                  [ngClass]="{ 'input-group-focus': focus2 === true }"
-                >
+                <div class="input-group" [ngClass]="{ 'input-group-focus': focus2 === true }">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="tim-icons icon-email-85"> </i>
                     </span>
                   </div>
-                  <input
-                    class="form-control"
-                    placeholder="Email Here..."
-                    type="text"
-                    (blur)="focus2 = false"
-                    (focus)="focus2 = true"
-                  />
+                  <input class="form-control" placeholder="Email Here..." type="text" (blur)="focus2 = false"
+                    (focus)="focus2 = true" />
                 </div>
               </div>
               <div class="form-group">
                 <label> Your message </label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="6"
-                ></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6"></textarea>
               </div>
               <div class="row">
                 <div class="col-md-6 ml-auto">
-                  <button
-                    class="btn btn-danger btn-round pull-right"
-                    type="submit"
-                  >
+                  <button class="btn btn-danger btn-round pull-right" type="submit">
                     Send Message
                   </button>
                 </div>
@@ -166,5 +144,5 @@
       </div>
     </div>
   </div>
-  <div class="map" id="contactUsMap"></div>
+  <div id="map" class="contactUsMap"></div>
 </div>

@@ -50,6 +50,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { PictureUploadComponent } from "./components/picture-upload/picture-upload.component";
 import { OfferComponent } from './pages/offer/offer.component';
 import { ContactmodalComponent } from './components/contactmodal/contactmodal.component';
+import { TeamComponent } from './pages/team/team.component';
 
 
 @NgModule({
@@ -79,7 +80,8 @@ import { ContactmodalComponent } from './components/contactmodal/contactmodal.co
     FooterComponent,
     PictureUploadComponent,
     OfferComponent,
-    ContactmodalComponent
+    ContactmodalComponent,
+    TeamComponent
   ],
   imports: [
     CommonModule,

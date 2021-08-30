@@ -23,6 +23,7 @@ import { PricingComponent } from "./examples/pricing/pricing.component";
 import { ProductpageComponent } from "./examples/productpage/productpage.component";
 import { ResetpageComponent } from "./examples/resetpage/resetpage.component";
 import { OfferComponent } from "./pages/offer/offer.component";
+import { TeamComponent } from "./pages/team/team.component";
 
 
 const routes: Routes = [
@@ -50,6 +51,7 @@ const routes: Routes = [
   { path: "home", component: LandingpageComponent },
   { path: "contact-us", component: ContactusComponent },
   { path: "about-us", component: AboutusComponent },
+  { path: "team", component: TeamComponent },
   { path: "offer", component: OfferComponent },
 ];
 

@@ -36,3 +36,30 @@
     }
   }
 }
+
+//Form
+.form-control {
+  border: none;
+}
+.input-group {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  transition: 0.2s ease;
+  .input-group-text {
+    border: none;
+  }
+}
+.input-group.active {
+  border: 1px solid #d251db;
+}
+
+.form-group {
+  textarea {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    transition: 0.2s ease;
+  }
+  textarea.active {
+    border: 1px solid #d251db;
+  }
+}

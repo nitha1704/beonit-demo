@@ -14,14 +14,14 @@ import { TabsModule } from "ngx-bootstrap/tabs";
 import { PaginationModule } from "ngx-bootstrap/pagination";
 import { AlertModule } from "ngx-bootstrap/alert";
 import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
-import { CarouselModule } from "ngx-bootstrap/carousel";
+// import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
 import { AngularMultiSelectModule } from "angular2-multiselect-dropdown";
 import { TimepickerModule } from "ngx-bootstrap/timepicker";
 
-//import { CarouselModule } from "ngx-owl-carousel-o";
+import { CarouselModule } from "ngx-owl-carousel-o";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -121,9 +121,9 @@ import { WaterQualityMonitoringComponent } from './pages/products/water-quality-
     PaginationModule.forRoot(),
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
-    CarouselModule.forRoot(),
+    // CarouselModule.forRoot(),
     ModalModule.forRoot(),
-    //CarouselModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

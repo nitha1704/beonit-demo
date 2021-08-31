@@ -31,3 +31,37 @@
     font-size: 40px;
   }
 }
+
+// Form
+label {
+  color: #29ba98;
+}
+.form-control::placeholder {
+  color: #29ba98;
+}
+.form-control,
+.input-group-text {
+  border: none;
+}
+.input-group {
+  border: 1px solid #29ba98;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  .tim-icons {
+    color: #29ba98;
+  }
+}
+
+.input-group.active {
+  border: 1px solid #ee2d7b;
+}
+
+.form-group {
+  textarea {
+    border: 1px solid #29ba98;
+    transition: 0.2s ease;
+  }
+  textarea.active{
+    border: 1px solid #ee2d7b;
+  }
+}

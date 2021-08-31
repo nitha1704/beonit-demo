@@ -15,10 +15,17 @@ export class ContactmodalComponent implements OnInit {
     wrapContactModal.classList.remove("active");
   }
 
-  addFocus(e) {
-    e.target.parentNode.classList.add("input-group-focus");
+  addFocus(e: any) {
+    e.target.parentNode.classList.add("active");
   }
-  removeFocus(e) {
-    e.target.parentNode.classList.remove("input-group-focus");
+  removeFocus(e: any) {
+    e.target.parentNode.classList.remove("active");
+  }
+
+  addFocusTextArea(e: any) {
+    e.target.classList.add("active");
+  }
+  removeFocusTextArea(e: any) {
+    e.target.classList.remove("active");
   }
 }

@@ -26,21 +26,34 @@ export class ContactusComponent implements OnInit, OnDestroy {
     });
 
     loader.load().then(() => {
-      const myLatLng = { lat: 13.726956, lng: 100.475933 }
-
+      const myLatLng = { lat: 13.726956, lng: 100.475933 };
       var map = new google.maps.Map(document.getElementById("map"), {
         center: myLatLng,
         zoom: 19,
       });
-
       var marker = new google.maps.Marker({
         position: myLatLng,
         title: "Be on It รับแก้ปัญหา โดยใช้ It",
       });
-
       marker.setMap(map);
-
-
     });
+  }
+
+  showBorder(event: any) {
+    const divParent = event.target.parentNode;
+    divParent.classList.add("active");
+  }
+  hideBorder(event: any) {
+    const divParent = event.target.parentNode;
+    divParent.classList.remove("active");
+  }
+
+  showBorderTextArea(event: any) {
+    const elem = event.target;
+    elem.classList.add("active");
+  }
+  hideBorderTextArea(event: any) {
+    const elem = event.target;
+    elem.classList.remove("active");
   }
 }

@@ -20,7 +20,8 @@ import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
 import { AngularMultiSelectModule } from "angular2-multiselect-dropdown";
 import { TimepickerModule } from "ngx-bootstrap/timepicker";
-import { SwiperModule } from "swiper/angular";
+
+//import { CarouselModule } from "ngx-owl-carousel-o";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -61,6 +62,7 @@ import { PulseOximeterComponent } from './pages/products/pulse-oximeter/pulse-ox
 import { WaterQualityMonitoringComponent } from './pages/products/water-quality-monitoring/water-quality-monitoring.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -97,6 +99,7 @@ import { WaterQualityMonitoringComponent } from './pages/products/water-quality-
     KeyboardComponent,
     PulseOximeterComponent,
     WaterQualityMonitoringComponent,
+
   ],
   imports: [
     CommonModule,
@@ -119,7 +122,8 @@ import { WaterQualityMonitoringComponent } from './pages/products/water-quality-
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    //CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

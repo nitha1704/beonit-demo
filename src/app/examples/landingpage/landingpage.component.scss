@@ -10,6 +10,9 @@
       background-color: #030303;
     }
   }
+  .description {
+    min-height: 120px;
+  }
 }
 
 .section3 {
@@ -24,7 +27,25 @@
   }
 }
 
+@media (max-width: 991.98px) {
+.info:first-of-type {
+    padding-top: 100px !important;
+}
+}
+
+
 @media (max-width: 992px) {
+  // Section2
+  .section2 {
+    .item {
+      margin-bottom: 30px;
+    }
+    .description {
+      min-height: auto;
+    }
+  }
+
+  // Section 3
   .carousel-row {
     flex-direction: column-reverse;
   }
